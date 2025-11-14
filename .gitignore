@@ -1,0 +1,108 @@
+# ---------------------------
+# Node.js / JavaScript
+# ---------------------------
+
+# Node modules folder
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Build output
+dist/
+build/
+out/
+
+# Dependency directories
+jspm_packages/
+
+# ---------------------------
+# OS Generated Files
+# ---------------------------
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# ---------------------------
+# IDE / Editor Files
+# ---------------------------
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# JetBrains IDEs (WebStorm, IntelliJ)
+.idea/
+*.iml
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# ---------------------------
+# Temporary / Backup Files
+# ---------------------------
+
+*.tmp
+*.swp
+*.swo
+*.bak
+*.orig
+
+# ---------------------------
+# Test Coverage / Reports
+# ---------------------------
+
+coverage/
+.nyc_output/
+report/
+
+# ---------------------------
+# Compiled / Transpiled Files
+# ---------------------------
+*.tsbuildinfo
+*.js.map
+*.css.map
+
+# ---------------------------
+# Package Managers
+# ---------------------------
+
+# npm logs
+package-lock.json
+
+# Yarn logs
+yarn.lock
+
+# pnpm lockfile
+pnpm-lock.yaml
+
+# ---------------------------
+# Optional: Misc
+# ---------------------------
+
+# Docker
+docker-compose.override.yml
+.Dockerfile
+
+# Misc system files
+*.log
+*.pid
