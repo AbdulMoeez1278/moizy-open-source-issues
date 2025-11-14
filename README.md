@@ -78,9 +78,3 @@ We encourage discussions, questions, and collaboration! Feel free to open a disc
 💡 Keep Learning
 
 Every issue is a chance to practice, learn, and showcase your skills. Start contributing today and grow your developer profile. 🚀
-
----
-
-If you want, I can also **create the ready-to-use `CONTRIBUTING.md` file and first 3-5 starter issues** for your repo so that it’s completely set up for contributors.  
-
-Do you want me to do that next?
