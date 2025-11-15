@@ -47,7 +47,7 @@ Code Structure
 
 ---
 
-3. HTML
+## 3. HTML
 
 - Use semantic HTML tags (`<header>`, `<main>`, `<footer>`, `<section>`)
 - Indent nested elements with 2 spaces
@@ -66,7 +66,7 @@ Code Structure
 
    ---
    
-4. CSS / SCSS / Tailwind
+## 4. CSS / SCSS / Tailwind
 
 - Use kebab-case for class names → btn-primary, form-input
 - Indent rules with 2 spaces
@@ -88,7 +88,7 @@ Code Structure
 
 ---
 
-5. Commit Messages
+## 5. Commit Messages
 
 - Use imperative mood → "Add feature", "Fix bug", "Update README"
 - Prefix commits with type:
@@ -103,7 +103,7 @@ Code Structure
 
 ---
    
-6. Pull Requests
+## 6. Pull Requests
 
 - Each PR should focus on one issue.
 - Include a clear description of changes.
@@ -117,7 +117,7 @@ Code Structure
 
 ---
 
-7. Testing (if applicable)
+## 7. Testing (if applicable)
 
 - Include example/test cases for functions.
 - Keep tests small and focused.
@@ -125,7 +125,7 @@ Code Structure
 
 ---
 
-8. Best Practices
+## 8. Best Practices
 
 - Follow DRY principle – Don't Repeat Yourself
 - Avoid global variables unless necessary
