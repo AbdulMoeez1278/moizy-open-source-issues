@@ -51,7 +51,7 @@ Open a Pull Request referencing the issue.
 
 ---
 
-Branching Guidelines
+## Branching Guidelines
 
 - main → Always stable, production-ready code.
 - issue-<number>-short-description → Each issue gets a separate branch.
@@ -59,7 +59,7 @@ Branching Guidelines
 
 ---
 
-Issue Guidelines
+## Issue Guidelines
 
 - Only pick one issue at a time.
 - Solve the issue within 7 days of assignment.
@@ -68,7 +68,7 @@ Issue Guidelines
 
 ---
 
-Pull Request Guidelines
+## Pull Request Guidelines
 
 - Reference the issue number in PR description:
   ```bash
@@ -81,7 +81,7 @@ Pull Request Guidelines
 
 ---
 
-Code Style
+## Code Style
 
 - Follow consistent indentation and formatting.
 - Use descriptive variable and function names.
@@ -90,7 +90,7 @@ Code Style
 
 ---
 
-Community Guidelines
+## Community Guidelines
 
 - Be respectful, polite, and professional.
 - No spam, trolling, or offensive language.
@@ -99,7 +99,7 @@ Community Guidelines
 
 ---
 
-Getting Help
+## Getting Help
 
 - If you have questions or need guidance:
 - Open a discussion in the Discussions tab.
@@ -107,7 +107,3 @@ Getting Help
 - Thank you for contributing! Your efforts help make this project better and support the learning community. 🚀
 
 ---
-
-If you want, I can **also create a ready-to-use set of 5 starter issues with labels and templates**, so your repo looks fully professional and contributors can start immediately.  
-
-Do you want me to do that next?
