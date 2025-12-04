@@ -18,10 +18,25 @@ const assertEquals = (actual, expected) => {
   }
 };
 
+// Save original console.error
+const originalConsoleError = console.error;
+
+// Spy function to capture console.error messages
+let consoleOutput = [];
+const mockConsoleError = (message) => consoleOutput.push(message);
+console.error = mockConsoleError;
+
 test('valid email returns true', () => {
   assertEquals(validateEmail('test@yahoo.com'), true);
 });
 
 test('invalid email returns false', () => {
+  consoleOutput = []; // reset before test
   assertEquals(validateEmail('abc.com'), false);
+  if (!consoleOutput.some(msg => msg.includes('ValidationError'))) {
+    throw new Error('ValidationError not logged to console');
+  }
 });
+
+// Restore console.error
+console.error = originalConsoleError;
