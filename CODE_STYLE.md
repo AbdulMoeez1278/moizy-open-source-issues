@@ -21,7 +21,7 @@ Following these guidelines ensures consistency, readability, and maintainability
 - **Variables:** camelCase → `userName`, `emailAddress`
 - **Constants:** UPPERCASE → `MAX_ATTEMPTS`
 - **Functions:** camelCase → `validateEmail()`
-- **Classes:** PascalCase → `UserProfile`
+- **Classes:** PascalCase → `validateEmailUserProfile`
 
 ### Formatting
 - 2 spaces for indentation
