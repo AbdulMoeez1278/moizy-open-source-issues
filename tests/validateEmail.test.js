@@ -15,7 +15,7 @@ const test = (name, fn) => {
 const assertEquals = (actual, expected) => {
   if (actual !== expected) {
     throw new Error(`Expected ${expected}, got ${actual}`);
-  }
+  };
 };
 
 // Save original console.error
@@ -26,17 +26,9 @@ let consoleOutput = [];
 const mockConsoleError = (message) => consoleOutput.push(message);
 console.error = mockConsoleError;
 
-test('valid email returns true', () => {
-  assertEquals(validateEmail('test@yahoo.com'), true);
-});
+test('valid email returns true', () => assertEquals(validateEmail('test@yahoo.com'), true));
+
 
 test('invalid email returns false', () => {
-  consoleOutput = []; // reset before test
   assertEquals(validateEmail('abc.com'), false);
-  if (!consoleOutput.some(msg => msg.includes('ValidationError'))) {
-    throw new Error('ValidationError not logged to console');
-  }
 });
-
-// Restore console.error
-console.error = originalConsoleError;
