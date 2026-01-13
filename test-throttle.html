@@ -1,0 +1,25 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Throttle Test</title>
+</head>
+<body style="height: 300vh; font-family: Arial;">
+  <h1>Scroll or resize and check the console</h1>
+
+  <script type="module">
+    import throttle from './utils/throttle.js';
+
+    const onScroll = throttle(() => {
+      console.log('Throttled scroll at', new Date().toLocaleTimeString());
+    }, 500);
+
+    const onResize = throttle(() => {
+      console.log('Throttled resize:', window.innerWidth, 'x', window.innerHeight);
+    }, 500);
+
+    window.addEventListener('scroll', onScroll);
+    window.addEventListener('resize', onResize);
+  </script>
+</body>
+</html>
