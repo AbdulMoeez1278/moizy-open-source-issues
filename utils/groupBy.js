@@ -10,7 +10,8 @@ function groupBy(array, keyOrFn) {
     return {};
   }
 
-  if (typeof keyOrFn !== 'string' && typeof keyOrFn !== 'function') {
+  const isValidKey = ['string', 'number', 'boolean', 'symbol'].includes(typeof keyOrFn);
+  if (!isValidKey && typeof keyOrFn !== 'function') {
     return {};
   }
 
@@ -21,7 +22,7 @@ function groupBy(array, keyOrFn) {
 
     const normalizedKey = String(groupKey);
 
-    if (!result[normalizedKey]) {
+    if (!Object.prototype.hasOwnProperty.call(result, normalizedKey)) {
       result[normalizedKey] = [];
     }
 
