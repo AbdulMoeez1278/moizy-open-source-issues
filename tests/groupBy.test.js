@@ -32,3 +32,28 @@ const callbackUndefined = [
 console.log(groupBy(callbackUndefined, () => undefined));
 
 console.log(users);
+
+// Edge Cases
+
+// 1. Boolean keys
+const booleanItems = [
+  { name: "A", active: true },
+  { name: "B", active: false },
+  { name: "C", active: true }
+];
+console.log(groupBy(booleanItems, item => item.active));
+
+// 2. Numeric keys
+const numericItems = [
+  { 0: "A" },
+  { 0: "B" },
+  { 1: "C" }
+];
+console.log(groupBy(numericItems, 0));
+
+// 3. Prototype keys (should not overwrite existing prototype properties)
+const protoKeys = [
+  { key: "constructor", val: 1 },
+  { key: "__proto__", val: 2 }
+];
+console.log(groupBy(protoKeys, item => item.key));
