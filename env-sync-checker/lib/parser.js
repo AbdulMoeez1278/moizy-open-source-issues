@@ -39,7 +39,7 @@ function parseEnv(filePath) {
       duplicates,
       emptyKeys,
     };
-  } catch (error) {
+  } catch {
     console.log(`Error: ${filePath} file not found`);
     process.exit(1);
   }

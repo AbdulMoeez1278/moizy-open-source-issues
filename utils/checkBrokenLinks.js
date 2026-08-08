@@ -32,11 +32,11 @@ async function checkBrokenLinks(urls) {
                 statusCode: res.status,
                 status: res.status === 200 ? "valid" : "Broken"
             });
-        } catch (err) {
-            result.push({
-                url: url,
-                status: "broken",
-            });
+        } catch {
+          result.push({
+              url: url,
+              status: "broken",
+          });
         }
     }
 
