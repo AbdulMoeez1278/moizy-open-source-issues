@@ -45,9 +45,13 @@ function compareArrays(a, b) {
     return false;
   }
 
-  return a.every((item, index) => {
-    return deepEqual(item, b[index]);
-  });
+  for (let i = 0; i < a.length; i++) {
+    if (!deepEqual(a[i], b[i])) {
+      return false;
+    }
+  }
+
+  return true;
 }
 
 /**
@@ -65,10 +69,12 @@ function compareObjects(a, b) {
     return false;
   }
 
-  return keysA.every((key) => {
-    return Object.prototype.hasOwnProperty.call(b, key) &&
-      deepEqual(a[key], b[key]);
-  });
+  for (let i = 0; i < keysA.length; i++) {
+    const key = keysA[i];
+    if (!Object.prototype.hasOwnProperty.call(b, key) || !deepEqual(a[key], b[key])) {
+      return false;
+    }
+  }
 }
 
 module.exports = deepEqual;
