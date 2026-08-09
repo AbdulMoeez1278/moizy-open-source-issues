@@ -54,7 +54,7 @@ function throttle(fn, delay, options = {}) {
   };
 
   // Schedule trailing execution
-  const scheduleTrailing = (context, args) => {
+  const scheduleTrailing = () => {
     if (timeoutId) {
       clearTimeout(timeoutId);
     }
@@ -93,7 +93,7 @@ function throttle(fn, delay, options = {}) {
 
     // If throttling and trailing is enabled, schedule execution
     if (trailing) {
-      scheduleTrailing(this, args);
+      scheduleTrailing();
     }
 
     // Return last result for immediate feedback

@@ -42,7 +42,7 @@ class TaskQueue {
 
       try {
         await currentTask();
-      } catch (error) {
+      } catch {
         // Continue processing remaining tasks if one task fails.
       }
     }

@@ -31,27 +31,16 @@ function validateFile(file, options = {}) {
 
   // File object validation
   if (
-    typeof file !== "object" ||
-    file.size === undefined ||
-    file.type === undefined ||
-    file.name === undefined
+    typeof file !== 'object' ||
+    typeof file.name !== 'string' ||
+    typeof file.size !== 'number' ||
+    typeof file.type !== 'string'
   ) {
     return {
       valid: false,
-      errors: ["Invalid file object"],
+      errors: ['Invalid file object']
     };
   }
-  if (
-  typeof file !== 'object' ||
-  typeof file.name !== 'string' ||
-  typeof file.size !== 'number' ||
-  typeof file.type !== 'string'
-) {
-  return {
-    valid: false,
-    errors: ['Invalid file object']
-  };
-}
 
   // File size validation
   if (

@@ -18,13 +18,6 @@ const assertEquals = (actual, expected) => {
   };
 };
 
-// Save original console.error
-const originalConsoleError = console.error;
-
-// Spy function to capture console.error messages
-let consoleOutput = [];
-const mockConsoleError = (message) => consoleOutput.push(message);
-console.error = mockConsoleError;
 
 test('valid email returns true', () => assertEquals(validateEmail('test@yahoo.com'), true));
 

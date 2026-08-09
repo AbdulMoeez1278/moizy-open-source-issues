@@ -27,7 +27,7 @@ export function safeJSONParse(jsonString) {
       data: parsed,
       error: null,
     };
-  } catch (error) {
+  } catch {
     return {
       data: null,
       error: "Invalid JSON",

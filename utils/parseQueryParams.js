@@ -27,9 +27,3 @@ export function parseQueryParams(query) {
 
   return result;
 }
-
-// console.log(parseQueryParams(null));
-// console.log(new URLSearchParams(null));
-console.log(parseQueryParams('?tag=js&tag=node'));
-console.log(parseQueryParams('?tag=js'));
-// console.log(parseQueryParams(3));
